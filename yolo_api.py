@@ -41,28 +41,3 @@ def detect_image():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=40000)
-
-
-'''
-
-        #f.save(secure_filename(f.filename))
-
-
-
-        names = result.names
-
-        # result 자체가 detection 객체야
-        print(result.pred)     # 여기는 detection 객체의 tensor 리스트를 출력해라
-
-        for data in result.pred :
-            each_list = data.numpy().tolist()
-            for each in each_list:
-                print("=================")
-                print(round(each[4],2))
-                print(names[int(each[5])])
-                print("=================")
-
-
-
-            #print(detections.pred[0].numpy())
-'''
